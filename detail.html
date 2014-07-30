@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+<script src="jquery-1.11.1.js"></script>
+<script src="nordstrom.js"></script>
+<script>
+	$(document).ready(function(e) {
+        searchResults.showItemDetail(window.location.search.substring(1));
+    });
+</script>
+<title>Item Detailt</title>
+</head>
+<body>
+<article>
+<header></header>
+<a class="RightAlignedLink" href="search.html">Back To Search Results:</a>
+<div id="detaildiv">
+	<table>
+    	<tr>
+        	<td>Brand:</td>
+            <td id="brand"></td>
+        </tr>
+    	<tr>
+        	<td>Description:</td>
+            <td id="description"></td>
+        </tr>
+     	<tr>
+        	<td>Product Id:</td>
+            <td id="prodid"></td>
+        </tr>
+     	<tr>
+        	<td>Price:</td>
+            <td id="price"></td>
+        </tr>
+     </table>
+     <div id="addtocart">Add to cart</div>
+</div>
+</article>
+</body>
+</html>
